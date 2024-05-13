@@ -30,7 +30,6 @@ const obtenerPaciente = async (req, res) => {
     }
 
     res.json(paciente)
-
 }
 
 const actualizarPaciente = async (req, res) => {
