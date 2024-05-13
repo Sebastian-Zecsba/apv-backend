@@ -9,7 +9,7 @@ app.use(express.json())
 
 conectarDB()
 
-const dominiosPermitidos = [process.env.FRONTEND_URL]
+// const dominiosPermitidos = [process.env.FRONTEND_URL]
 
 // const corsOptions = {
 //     origin: function(origin, callback){
@@ -22,9 +22,7 @@ const dominiosPermitidos = [process.env.FRONTEND_URL]
 //     }
 // }
 
-app.use(cors({
-    origin: 'https://apv-frontend-j7pm15ep0-sebastian-casallas-arias-projects.vercel.app'
-  }));
+app.use(cors())
 
 app.use('/api/veterinarios', veterinariosRauters)
 app.use('/api/pacientes', pacienteRoutes)
